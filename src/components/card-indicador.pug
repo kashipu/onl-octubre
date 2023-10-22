@@ -1,0 +1,9 @@
+mixin card-indicador(img, alt, title, text, link, buttonText)
+    .card
+        img.card-img-top(src=img alt=alt)
+        .card-body
+            h2.card-title #{title}
+            hr
+            p.card-text #{text}
+        .card-footer.d-flex.justify-content-end
+            a(class="btn btn-primary" href=link) #{buttonText}

@@ -1,0 +1,19 @@
+.card-title {
+    text-transform: uppercase;
+    color: $blue-titles;
+    font-size: 1.5rem;
+}
+.card-body {
+    hr {
+        border: 1.5px solid $green-lines;
+        width: 60%;
+        margin-left: 0;
+    }
+}
+.card-text {
+    line-height: 1.8;
+}
+.card-footer {
+    background-color: transparent;
+    border-top: 0;
+}

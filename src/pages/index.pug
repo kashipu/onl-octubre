@@ -1,0 +1,24 @@
+include ../components/card-desk.pug
+include ../components/card-indicador.pug
+doctype html
+html(lang="es")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        // Links y hojas de estilo
+        include ../components/head.pug
+        title ONL Octubre
+    body
+        // Header
+        header
+            include ../components/header-govco.pug
+            include ../components/header-logos.pug
+            include ../components/header-nav.pug
+        // Main content
+        main
+            // card-indicador(img, alt, title, text, link, buttonText)
+            +card-desk
+                +card-indicador("https://placehold.co/606x318", "Imagen de ejemplo", "Cobertura de empresas", "Indicador de cobertura de empresas logísticas por actividad económica que utiliza información del directorio del 2022 creado por el DANE.", "#", "Ir al visor de datos")
+                +card-indicador("https://placehold.co/606x318", "Imagen de ejemplo", "Relación espacio urbano", "Relación de áreas urbanas para la movilidad, en el total nacional del área urbana el 11% esta destinado a los peatones y 4% a vehículos", "#", "Ir al mapa")
+        // Scripts
+        include ../components/scripts.pug
