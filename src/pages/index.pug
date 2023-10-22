@@ -7,7 +7,7 @@ html(lang="es")
         meta(name="viewport", content="width=device-width, initial-scale=1.0")
         // Links y hojas de estilo
         include ../components/head.pug
-        title ONL Octubre
+        title ONL Felipe
     body
         // Header
         header
@@ -15,10 +15,23 @@ html(lang="es")
             include ../components/header-logos.pug
             include ../components/header-nav.pug
         // Main content
-        main
+        main.index-page
             // card-indicador(img, alt, title, text, link, buttonText)
             +card-desk
-                +card-indicador("https://placehold.co/606x318", "Imagen de ejemplo", "Cobertura de empresas", "Indicador de cobertura de empresas logísticas por actividad económica que utiliza información del directorio del 2022 creado por el DANE.", "#", "Ir al visor de datos")
-                +card-indicador("https://placehold.co/606x318", "Imagen de ejemplo", "Relación espacio urbano", "Relación de áreas urbanas para la movilidad, en el total nacional del área urbana el 11% esta destinado a los peatones y 4% a vehículos", "#", "Ir al mapa")
-        // Scripts
+                +card-indicador("img/img1.png", "Imagen de ejemplo", "Cobertura de empresas", "Indicador de cobertura de empresas logísticas por actividad económica que utiliza información del directorio del 2022 creado por el DANE.", "#", "Ir al visor de datos")
+                +card-indicador("img/img2.png", "Imagen de ejemplo", "Relación espacio urbano", "Relación de áreas urbanas para la movilidad, en el total nacional del área urbana el 11% esta destinado a los peatones y 4% a vehículos", "#", "Ir al mapa")
+            include ../components/banner-inserto.pug
+            +card-desk
+                +card-indicador("img/img3.png", "Imagen de ejemplo", "Gini movilidad", "En el rango de 0 a 1, el promedio nacional del Gini movilidad es de 0.47. Menos de la mitad del país tienen una movilidad aceptable.", "#", "Ir al visor de datos")
+                +card-indicador("img/img4.png", "Imagen de ejemplo", "Amenaza movimiento en masa", "De 17 mil km de vías primarias se encuentran en riesgo muy alto y alta 6.513 km, siendo un 38% del total.", "#", "Ir al mapa")
+            include ../components/banner-inserto.pug
+            +card-desk
+                +card-indicador("img/img5.png", "Imagen de ejemplo", "Cobertura de energía", "Más de 1 millón de viviendas no tienen servicio de energía.", "#", "Ir al visor de datos")
+                +card-indicador("img/img6.png", "Imagen de ejemplo", "Densidad red vial", "Cundinamarca tiene 900 metros de vías terciarias por kilómetro cuadrado de territorio, pero otros departamentos solo se tienen cerca de 100 metros.", "#", "Ir al mapa")
+            .p-5
+            include ../components/slider-capsulas.pug
+            include ../components/visor-box.pug
+            include ../components/banner-dnp.pug
+
         include ../components/scripts.pug
+        include ../components/footer.pug

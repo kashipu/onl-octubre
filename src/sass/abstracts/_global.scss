@@ -5,8 +5,47 @@ body {
     font-size: 16px;
 }
 
-main {
+.index-page {
     background-color: transparent;
     position: relative;
     top: -6rem;
 }
+.indicador-page {
+    position: relative;
+    top: 0;
+    background-color: aqua;
+}
+
+.btn {
+    border-radius: 1.25rem;
+    padding: .5rem 2rem;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+// btn-outline($text-color, $border-color, $background-color, $hover-color)
+.btn-outline-card {
+    @include btn-outline($green-lines, $green-lines, #fff,$green-lines);
+}
+
+.banner-dnp {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 0rem;
+    img {
+        width: 35rem;
+    }
+}
+
+.border-right-onl {
+    border-right: 2px solid #dee2e6 !important;
+  }
+
+.border-green-onl {
+    border-color: $green-lines !important;
+}
+
+.bg-gray-onl {
+    background-color: $gray-background !important;
+  }

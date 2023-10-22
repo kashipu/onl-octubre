@@ -1,5 +1,8 @@
 header {
-    background-color: #223667;
+    background: url('../img/header-background.png'), rgb(34,54,103);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
     height: 55vh;
 }
 .navigation {

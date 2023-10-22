@@ -1,0 +1,23 @@
+include ../components/card-desk.pug
+include ../components/card-indicador.pug
+doctype html
+html(lang="es")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        // Links y hojas de estilo
+        include ../components/head.pug
+        title ONL Felipe
+    body
+        // Header
+        include ../components/header-govco.pug
+        include ../components/header-logos.pug
+        include ../components/header-nav-indicador.pug
+        // Main content
+        main.indicador-page
+            .p-5
+            .container
+                include ../components/visor-box.pug
+            footer.p-5
+        // Scripts
+        include ../components/scripts.pug
