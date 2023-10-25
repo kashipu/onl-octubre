@@ -1,7 +1,11 @@
 section.banner-inserto
     .container
         .row.m-2.p-3.rounded.bg-gray-onl
-            .col-lg-6.border-right-onl.border-green-onl
-                img(class="img-fluid" src="https://placehold.co/650x258", alt="", srcset="")
-            .col-lg-6
-                img(class="img-fluid" src="https://placehold.co/650x258", alt="", srcset="")
+            .col-lg-12
+                picture
+                    // Imagen responsive cuadrada
+                    source(media='(max-width:991px)' srcset='https://placehold.co/1000x1000/red/white')
+                    // Imagen rectangular para pantallas grandes
+                    img(class="img-fluid" src='https://placehold.co/1062x258/000000/FFF' alt='Imagen,Banner')
+            .col-lg-12.p-3.d-flex.align-items-center.justify-content-end
+                a.btn.btn-outline-card(href="#") Botón de ejemplo

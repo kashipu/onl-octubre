@@ -1,0 +1,22 @@
+.title-encuesta {
+    margin: 3rem 0rem;
+    h1 {
+        text-transform: uppercase;
+
+    }
+}
+.encuesta-text {
+    p {
+        font-size: 2rem;
+        line-height: 3rem;
+        margin-bottom: 1rem;
+        font-weight: 400;
+    }
+}
+.annio-encuesta {
+    display: flex;
+    flex-direction: column;
+    select {
+        width: 30%;
+    }
+}

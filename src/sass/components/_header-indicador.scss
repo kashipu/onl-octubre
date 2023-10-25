@@ -1,0 +1,33 @@
+.navigation-indicador {
+    color: white;
+    display: flex;
+    justify-content: center;
+    border-top: 1px solid $gray-lines;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+}
+.nav-list-indicador {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 0;
+    li {
+        a {
+            color: $blue-titles;
+            text-decoration: none;
+            padding: .8rem;
+            font-size: 1.08rem;
+            border: 1px solid transparent;
+            text-transform: uppercase;
+            &:hover {
+                border-bottom: 2px solid $blue-titles;
+            }
+        }
+    }
+}

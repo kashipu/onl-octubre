@@ -1,0 +1,33 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        include ../components/head.pug
+        title Encuesta Nacional Logistica
+    body
+        include ../components/header-govco.pug
+        include ../components/header-logos.pug
+        main
+            .container
+                .row
+                    .col-md-12.text-center
+                        .title-encuesta
+                            h1 Encuesta Nacional Logistica
+                .row
+                    .col-md-6.text-center
+                        img(class="img-fluid" src="img/mapaencuesta.png", alt="Imagen, encuesta nacional logistica")
+                    .col-md-6.encuesta-text
+                        p La ENL es un instrumento de captura y generación de información a través del cual se mide el desempeño logístico del país, sirviendo como insumo para la toma de decisiones, tanto en política pública como del sector privado, enfocadas en mejorar la infraestructura y los servicios de transporte, almacenamiento, comercio exterior y demás operaciones del sector logístico.
+                .row
+                    .col-md-12
+                        .annio-encuesta
+                            label(for="year") Elija el año a consultar
+                            select(name="year")
+                                option(value="") Seleccione
+                                option(value="") Seleccione
+                                option(value="") Seleccione
+                                option(value="") Seleccione
+        include ../components/banner-dnp.pug
+        include ../components/scripts.pug
+        include ../components/footer.pug

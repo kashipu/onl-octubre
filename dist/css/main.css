@@ -10,8 +10,6 @@ body {
 
 .index-page {
   background-color: transparent;
-  position: relative;
-  top: -6rem;
 }
 
 .indicador-page {
@@ -142,6 +140,68 @@ header {
   border-bottom: 2px solid white;
 }
 
+.navigation-indicador {
+  color: white;
+  display: flex;
+  justify-content: center;
+  border-top: 1px solid #d1d1d1;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-list-indicador {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 0;
+}
+.nav-list-indicador li a {
+  color: #475372;
+  text-decoration: none;
+  padding: 0.8rem;
+  font-size: 1.08rem;
+  border: 1px solid transparent;
+  text-transform: uppercase;
+}
+.nav-list-indicador li a:hover {
+  border-bottom: 2px solid #475372;
+}
+
+.title-box-visor-indicador h1 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-bottom: 2rem;
+}
+
+.title-encuesta {
+  margin: 3rem 0rem;
+}
+.title-encuesta h1 {
+  text-transform: uppercase;
+}
+
+.encuesta-text p {
+  font-size: 2rem;
+  line-height: 3rem;
+  margin-bottom: 1rem;
+  font-weight: 400;
+}
+
+.annio-encuesta {
+  display: flex;
+  flex-direction: column;
+}
+.annio-encuesta select {
+  width: 30%;
+}
+
 .card-deck .card {
   min-width: 350px;
   margin: 1rem;
@@ -166,6 +226,23 @@ header {
 .card-footer {
   background-color: transparent;
   border-top: 0;
+}
+
+.capsulas-title h1 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+.capsulas-title h2 {
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-bottom: 2rem;
+}
+
+.capsulas-body h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
 }
 
 .title-box-visor {

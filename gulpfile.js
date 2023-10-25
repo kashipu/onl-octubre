@@ -25,6 +25,7 @@ task('images', () => {
 
 task('default', () => {
     watch('./src/**/*.pug', task('views'));
+    watch('./src/img/*', task('images'));
     watch('./src/sass/**/*.scss', task('styles'));
 });
 
