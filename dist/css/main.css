@@ -94,6 +94,10 @@ body {
   width: 160px;
 }
 
+.logo-onl {
+  width: 190px;
+}
+
 header {
   background: url("../img/header-background.png"), rgb(34, 54, 103);
   background-position: top;
