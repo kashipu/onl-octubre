@@ -11,3 +11,12 @@
 .logo-onl {
     width: 190px;
 }
+@media (max-width: 450px) {
+    .logo-gobierno {
+        width: 130px;
+    }
+    .logo-onl {
+        width: 160px;
+    }
+}
+
