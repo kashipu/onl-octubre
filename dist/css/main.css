@@ -61,7 +61,7 @@ main {
   padding: 2rem 0rem;
 }
 .banner-dnp img {
-  width: 35rem;
+  max-width: 320px;
 }
 
 .border-right-onl {
