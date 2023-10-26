@@ -394,10 +394,36 @@ main {
   margin-bottom: 3rem;
 }
 
-.slider-capsulas {
+.slider-capsulas-box {
   background-color: #5A708C;
-  height: 300px;
-  margin-bottom: 5rem;
+  padding: 2rem;
+  margin-bottom: 3rem;
+}
+
+.slider-capsulas {
+  height: 100%;
+}
+
+.card-capsula-box {
+  padding: 1rem;
+}
+
+.card-capsula-image img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.card-capsula-content {
+  text-transform: uppercase;
+  text-align: center;
+}
+.card-capsula-content a {
+  color: white;
+}
+.card-capsula-content a:hover {
+  color: #b3bdff;
 }
 
 .footer {
