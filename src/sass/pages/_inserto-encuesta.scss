@@ -15,6 +15,12 @@
     }
 }
 
+.dashboard-powerbi {
+    background-color: white;
+    height: 239px;
+    border: 1px dotted black;
+}
+
 
 
 .encuesta-title {
@@ -32,4 +38,7 @@
 }
 .body-section {
     margin-bottom: 4rem;
+}
+
+@media (max-width: 450px) {
 }

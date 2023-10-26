@@ -25,12 +25,23 @@
     left: 0;
     width: 100%;
     height: var(--video-height);
+}
+.bg-header-blue {
     background-color: var(--video-overlay);
 }
+.bg-header-gray {
+    background-color: #F7F7F9;
+}
+
 .header-link {
     text-transform: uppercase;
     color: white;
 }
+.header-link-intern {
+    text-transform: uppercase;
+    color: $blue-titles;
+}
+
 .header-info-container {
     position: absolute;
     top: 0;
@@ -44,15 +55,35 @@
     color: white;
     font-size: 3rem;
 }
-
+.header-title-intern {
+    text-transform: uppercase;
+    color: $blue-titles;
+    font-size: 3rem;
+}
 
 // Override the default Bootstrap 4 navbar styles
 $onl-color: rgba(255, 255, 255, 0.532);
 $onl-active: rgb(255, 255, 255);
 $onl-hover: rgb(255, 255, 255);
 $onl-border: red;
+//--
+$onl-color-intern: rgba(71, 83, 114, 0.426);
+$onl-active-intern: rgb(71, 83, 114);
+$onl-hover-intern: rgb(71, 83, 114);
+$onl-border-intern: red;
+
 .navbar-custom-onl-theme {
     @include navbar-theme($onl-color, $onl-active, $onl-hover, $onl-border);
+    .nav-link {
+        text-transform: uppercase;
+        border: 2px solid transparent;
+        font-size: 1.11rem;
+        font-weight: 400;
+        padding: 1rem;
+    }
+}
+.navbar-custom-onl-theme-intern {
+    @include navbar-theme($onl-color-intern, $onl-active-intern, $onl-hover-intern, $onl-border-intern);
     .nav-link {
         text-transform: uppercase;
         border: 2px solid transparent;
@@ -77,12 +108,31 @@ $onl-border: red;
 .collapse.show{
     background-color: rgba(34, 54, 103);
 }
+.collapse.collapse-intern.show {
+    background-color: white;
+}
+
+.breadcrumb {
+    background-color: transparent;
+}
+.breadcrumb-item a {
+    color: $blue-titles;
+}
 
 @media (max-width: 450px) {
-    .header-title {
+    .header-title, .header-title-intern {
         font-size: 2.5rem;
     }
+    .intern-page {
+        margin-top: 0px;
+    }
 }
+@media (max-width: 800px) {
+    .intern-page {
+        margin-top: 0px;
+    }
+}
+
 
 
 
