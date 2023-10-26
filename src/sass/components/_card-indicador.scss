@@ -17,3 +17,9 @@
     background-color: transparent;
     border-top: 0;
 }
+.card-img, .card-img-top {
+    border-top-left-radius: calc(.25rem - 1px);
+    border-top-right-radius: calc(.25rem - 1px);
+    aspect-ratio: 16/9;
+    object-fit: cover;
+}

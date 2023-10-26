@@ -1,11 +1,12 @@
-section.banner-inserto
-    .container
-        .row.m-2.p-3.rounded.bg-gray-onl
-            .col-lg-12
-                picture
-                    // Imagen responsive cuadrada
-                    source(media='(max-width:991px)' srcset='https://placehold.co/1000x1000/red/white')
-                    // Imagen rectangular para pantallas grandes
-                    img(class="img-fluid" src='https://placehold.co/1062x258/000000/FFF' alt='Imagen,Banner')
-            .col-lg-12.p-3.d-flex.align-items-center.justify-content-end
-                a.btn.btn-outline-card(href="#") Botón de ejemplo
+mixin banner-inserto(desktop, mobile, link, textoBoton)
+    section.banner-inserto
+        .container
+            .row.m-2.p-1.rounded.bg-gray-onl
+                .col-lg-12
+                    picture
+                        // Imagen responsive cuadrada
+                        source(media='(max-width:991px)' srcset=mobile)
+                        // Imagen rectangular para pantallas grandes
+                        img(class="img-fluid" src=desktop  alt='Imagen,Banner')
+                .col-lg-12.p-3.d-flex.align-items-center.justify-content-end
+                    a.btn.btn-outline-card(href=link) #{textoBoton}

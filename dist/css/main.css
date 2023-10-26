@@ -2,20 +2,21 @@
 /* Abstracts */
 /* Colores */
 /* Tipografía */
+/* Video settings */
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Work+Sans:wght@300;500;600&display=swap");
+:root {
+  --video-height: 500px;
+  --video-overlay: rgba(34, 54, 103, 0.75);
+}
+
 body {
   font-family: "Work Sans", sans-serif;
   font-size: 16px;
 }
 
-.index-page {
-  background-color: transparent;
-}
-
-.indicador-page {
+main {
   position: relative;
-  top: 0;
-  background-color: aqua;
+  margin-top: -80px;
 }
 
 .btn {
@@ -98,14 +99,13 @@ body {
   width: 190px;
 }
 
-header {
-  background: url("../img/header-background.png"), rgb(34, 54, 103);
-  background-position: top;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 55vh;
-}
-
+/* header {
+    background: url('../img/header-background.png'), rgb(34,54,103);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 55vh;
+} */
 .navigation {
   color: white;
   display: flex;
@@ -117,11 +117,6 @@ header {
   font-family: "Montserrat", sans-serif;
   text-align: center;
   margin-bottom: 3rem;
-}
-
-.navbar {
-  display: flex;
-  justify-content: space-between;
 }
 
 .nav-list {
@@ -178,6 +173,122 @@ header {
   border-bottom: 2px solid #475372;
 }
 
+/* $videoHeight: 500px; */
+.header-main {
+  position: relative;
+}
+
+.header-video-wrapper {
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: var(--video-height);
+}
+
+.header-video {
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.header-video-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: var(--video-height);
+  background-color: var(--video-overlay);
+}
+
+.header-link {
+  text-transform: uppercase;
+  color: white;
+}
+
+.header-info-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: var(--video-height);
+  padding: 1rem;
+}
+
+.header-title {
+  text-transform: uppercase;
+  color: white;
+  font-size: 3rem;
+}
+
+.navbar-custom-onl-theme .navbar-brand {
+  color: rgb(255, 255, 255);
+}
+.navbar-custom-onl-theme .navbar-brand:hover, .navbar-custom-onl-theme .navbar-brand:focus {
+  color: rgb(255, 255, 255);
+}
+.navbar-custom-onl-theme .navbar-nav .nav-link {
+  color: rgba(255, 255, 255, 0.532);
+}
+.navbar-custom-onl-theme .navbar-nav .nav-link:hover, .navbar-custom-onl-theme .navbar-nav .nav-link:focus {
+  color: rgb(255, 255, 255);
+  border-bottom: 2px solid rgb(255, 255, 255);
+}
+.navbar-custom-onl-theme .navbar-nav .nav-link.disabled {
+  color: rgba(255, 255, 255, 0.532);
+}
+.navbar-custom-onl-theme .navbar-nav .show > .nav-link, .navbar-custom-onl-theme .navbar-nav .active > .nav-link, .navbar-custom-onl-theme .navbar-nav .nav-link.show, .navbar-custom-onl-theme .navbar-nav .nav-link.active {
+  color: rgb(255, 255, 255);
+}
+.navbar-custom-onl-theme .navbar-toggler {
+  color: rgba(255, 255, 255, 0.532);
+  border-color: rgb(255, 255, 255);
+}
+.navbar-custom-onl-theme .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='white' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+.navbar-custom-onl-theme .navbar-text {
+  color: rgba(255, 255, 255, 0.532);
+}
+.navbar-custom-onl-theme .navbar-text a {
+  color: rgba(255, 255, 255, 0.532);
+}
+.navbar-custom-onl-theme .navbar-text a:hover, .navbar-custom-onl-theme .navbar-text a:focus {
+  color: red;
+}
+.navbar-custom-onl-theme .nav-link {
+  text-transform: uppercase;
+  border: 2px solid transparent;
+  font-size: 1.11rem;
+  font-weight: 400;
+  padding: 1rem;
+}
+
+.navbar-expand-lg .navbar-nav {
+  width: 100%;
+  justify-content: space-between;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  z-index: 10;
+}
+
+.navbar-collapse {
+  margin-top: 1rem;
+}
+
+.collapse.show {
+  background-color: rgb(34, 54, 103);
+}
+
 .title-box-visor-indicador h1 {
   font-size: 1.5rem;
   font-weight: 400;
@@ -230,6 +341,14 @@ header {
 .card-footer {
   background-color: transparent;
   border-top: 0;
+}
+
+.card-img, .card-img-top {
+  border-top-left-radius: calc(0.25rem - 1px);
+  border-top-right-radius: calc(0.25rem - 1px);
+  aspect-ratio: 16/9;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .capsulas-title h1 {

@@ -1,0 +1,87 @@
+/* $videoHeight: 500px; */
+.header-main {
+    position: relative;
+}
+.header-video-wrapper {
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: var(--video-height);
+}
+.header-video {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.header-video-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: var(--video-height);
+    background-color: var(--video-overlay);
+}
+.header-link {
+    text-transform: uppercase;
+    color: white;
+}
+.header-info-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: var(--video-height);
+    padding: 1rem;
+}
+.header-title {
+    text-transform: uppercase;
+    color: white;
+    font-size: 3rem;
+}
+
+
+// Override the default Bootstrap 4 navbar styles
+$onl-color: rgba(255, 255, 255, 0.532);
+$onl-active: rgb(255, 255, 255);
+$onl-hover: rgb(255, 255, 255);
+$onl-border: red;
+.navbar-custom-onl-theme {
+    @include navbar-theme($onl-color, $onl-active, $onl-hover, $onl-border);
+    .nav-link {
+        text-transform: uppercase;
+        border: 2px solid transparent;
+        font-size: 1.11rem;
+        font-weight: 400;
+        padding: 1rem;
+    }
+}
+.navbar-expand-lg .navbar-nav {
+    width: 100%;
+    justify-content: space-between;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    z-index: 10;
+}
+.navbar-collapse {
+    margin-top: 1rem;
+}
+
+.collapse.show{
+    background-color: rgba(34, 54, 103);
+}
+
+
+
+
+
+
+
+

@@ -1,10 +1,10 @@
-header {
+/* header {
     background: url('../img/header-background.png'), rgb(34,54,103);
     background-position: top;
     background-repeat: no-repeat;
     background-size: cover;
     height: 55vh;
-}
+} */
 .navigation {
     color: white;
     display: flex;
@@ -17,10 +17,7 @@ header {
         margin-bottom: 3rem;
     }
 }
-.navbar {
-    display: flex;
-    justify-content: space-between;
-}
+
 .nav-list {
     width: 100%;
     display: flex;

@@ -1,6 +1,6 @@
-mixin card-indicador(img, alt, title, text, link, buttonText)
+mixin card-indicador(video, poster, title, text, link, buttonText)
     .card
-        img.card-img-top(src=img alt=alt)
+        video.card-img-top(src=video poster=poster loop muted)
         .card-body
             h2.card-title #{title}
             hr

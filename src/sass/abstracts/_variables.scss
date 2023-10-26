@@ -5,7 +5,18 @@ $blue-titles: #475372;
 $green-lines: #727B36;
 $gray-background: #F9F9F9;
 $gray-lines: #d1d1d1;
+$blue-overlay: rgba(34, 54, 103, 0.75);
 
 /* Tipografía */
 $montserrat: 'Montserrat', sans-serif;
 $work-sans: 'Work Sans', sans-serif;
+
+/* Video settings */
+$videoHeight: 500px;
+$videoMinHeight: 300px;
+$videoOverlay: $blue-gov-co;
+
+:root {
+    --video-height: #{$videoHeight};
+    --video-overlay: #{$blue-overlay};
+}

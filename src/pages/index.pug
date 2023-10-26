@@ -1,5 +1,6 @@
 include ../components/card-desk.pug
 include ../components/card-indicador.pug
+include ../components/banner-inserto.pug
 doctype html
 html(lang="es")
     head
@@ -10,28 +11,25 @@ html(lang="es")
         title ONL | Observatorio nacional de logística
     body
         // Header
-        header
-            include ../components/header-govco.pug
-            include ../components/header-logos.pug
-            include ../components/header-nav.pug
+        include ../components/header-main.pug
         // Main content
-        main.index-page
+        main
             // card-indicador(img, alt, title, text, link, buttonText)
             +card-desk
-                +card-indicador("img/img1.png", "Imagen de ejemplo", "Cobertura de empresas", "Indicador de cobertura de empresas logísticas por actividad económica que utiliza información del directorio del 2022 creado por el DANE.", "#", "Ir al visor de datos")
-                +card-indicador("img/img2.png", "Imagen de ejemplo", "Relación espacio urbano", "Relación de áreas urbanas para la movilidad, en el total nacional del área urbana el 11% esta destinado a los peatones y 4% a vehículos", "#", "Ir al mapa")
-            include ../components/banner-inserto.pug
+                +card-indicador("video/fondocard.mp4", "img/img1.png", "Cobertura de empresas", "Indicador de cobertura de empresas logísticas por actividad económica que utiliza información del directorio del 2022 creado por el DANE.", "#", "Ir al visor de datos")
+                +card-indicador("video/fondocard.mp4", "img/img1.png", "Relación espacio urbano", "Relación de áreas urbanas para la movilidad, en el total nacional del área urbana el 11% esta destinado a los peatones y 4% a vehículos", "#", "Ir al mapa")
+            // banner-inserto(desktop, mobile, link, textoBoton)
+            +banner-inserto("img/banner1.png", "img/banner1-mb.png", "#", "Ver encuesta")
             +card-desk
-                +card-indicador("img/img3.png", "Imagen de ejemplo", "Gini movilidad", "En el rango de 0 a 1, el promedio nacional del Gini movilidad es de 0.47. Menos de la mitad del país tienen una movilidad aceptable.", "#", "Ir al visor de datos")
-                +card-indicador("img/img4.png", "Imagen de ejemplo", "Amenaza movimiento en masa", "De 17 mil km de vías primarias se encuentran en riesgo muy alto y alta 6.513 km, siendo un 38% del total.", "#", "Ir al mapa")
-            include ../components/banner-inserto.pug
+                +card-indicador("video/fondocard.mp4", "img/img1.png", "Gini movilidad", "En el rango de 0 a 1, el promedio nacional del Gini movilidad es de 0.47. Menos de la mitad del país tienen una movilidad aceptable.", "#", "Ir al visor de datos")
+                +card-indicador("video/fondocard.mp4", "img/img1.png", "Amenaza movimiento en masa", "De 17 mil km de vías primarias se encuentran en riesgo muy alto y alta 6.513 km, siendo un 38% del total.", "#", "Ir al mapa")
+            +banner-inserto("img/banner2.png", "img/banner2-mb.png", "#", "Conectar")
             +card-desk
-                +card-indicador("img/img5.png", "Imagen de ejemplo", "Cobertura de energía", "Más de 1 millón de viviendas no tienen servicio de energía.", "#", "Ir al visor de datos")
-                +card-indicador("img/img6.png", "Imagen de ejemplo", "Densidad red vial", "Cundinamarca tiene 900 metros de vías terciarias por kilómetro cuadrado de territorio, pero otros departamentos solo se tienen cerca de 100 metros.", "#", "Ir al mapa")
+                +card-indicador("video/fondocard.mp4", "img/img1.png", "Cobertura de energía", "Más de 1 millón de viviendas no tienen servicio de energía.", "#", "Ir al visor de datos")
+                +card-indicador("video/fondocard.mp4", "img/img1.png", "Densidad red vial", "Cundinamarca tiene 900 metros de vías terciarias por kilómetro cuadrado de territorio, pero otros departamentos solo se tienen cerca de 100 metros.", "#", "Ir al mapa")
             .p-5
             include ../components/slider-capsulas.pug
             include ../components/visor-box.pug
             include ../components/banner-dnp.pug
-
         include ../components/scripts.pug
         include ../components/footer.pug
