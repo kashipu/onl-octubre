@@ -1,0 +1,35 @@
+.navbar-expand-lg .navbar-nav {
+    width: 100%;
+}
+.nav-sidenav {
+    width: 100%;
+    justify-content: flex-end;
+}
+.navbar-kitgov {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.navbar {
+    padding-left: 0;
+}
+
+.navbar-expand-lg {
+    padding: 0;
+}
+
+.navbar-nav .nav-link {
+    margin: 0rem .5rem;
+}
+.nav-item {
+    padding: .3rem;
+    &:hover {
+        background-color: #004884;
+        color: white;
+    }
+}
+.nav-item > .nav-link {
+    &:hover {
+        color: white;
+    }
+}

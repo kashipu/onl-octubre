@@ -111,80 +111,6 @@ main.intern {
     width: 160px;
   }
 }
-/* header {
-    background: url('../img/header-background.png'), rgb(34,54,103);
-    background-position: top;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 55vh;
-} */
-.navigation {
-  color: white;
-  display: flex;
-  justify-content: center;
-  margin-top: 4.75rem;
-}
-.navigation h1 {
-  text-transform: uppercase;
-  font-family: "Montserrat", sans-serif;
-  text-align: center;
-  margin-bottom: 3rem;
-}
-
-.nav-list {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  list-style: none;
-  padding-left: 0;
-  margin-bottom: 0;
-}
-.nav-list li a {
-  color: white;
-  text-decoration: none;
-  padding: 0.8rem;
-  font-size: 1.08rem;
-  border: 1px solid transparent;
-  text-transform: uppercase;
-}
-.nav-list li a:hover {
-  border-bottom: 2px solid white;
-}
-
-.navigation-indicador {
-  color: white;
-  display: flex;
-  justify-content: center;
-  border-top: 1px solid #d1d1d1;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-}
-
-.navbar {
-  display: flex;
-  justify-content: space-between;
-}
-
-.nav-list-indicador {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  list-style: none;
-  padding-left: 0;
-  margin-bottom: 0;
-}
-.nav-list-indicador li a {
-  color: #475372;
-  text-decoration: none;
-  padding: 0.8rem;
-  font-size: 1.08rem;
-  border: 1px solid transparent;
-  text-transform: uppercase;
-}
-.nav-list-indicador li a:hover {
-  border-bottom: 2px solid #475372;
-}
-
 /* $videoHeight: 500px; */
 .header-main {
   position: relative;
@@ -361,17 +287,12 @@ main.intern {
 
 .navbar-expand-lg .navbar-nav {
   width: 100%;
-  justify-content: space-between;
 }
 
 .navbar {
   display: flex;
   justify-content: space-between;
   z-index: 10;
-}
-
-.navbar-collapse {
-  margin-top: 1rem;
 }
 
 .collapse.show {
@@ -403,6 +324,45 @@ main.intern {
     margin-top: 0px;
   }
 }
+.navbar-expand-lg .navbar-nav {
+  width: 100%;
+}
+
+.nav-sidenav {
+  width: 100%;
+  justify-content: flex-end;
+}
+
+.navbar-kitgov {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.navbar {
+  padding-left: 0;
+}
+
+.navbar-expand-lg {
+  padding: 0;
+}
+
+.navbar-nav .nav-link {
+  margin: 0rem 0.5rem;
+}
+
+.nav-item {
+  padding: 0.3rem;
+}
+.nav-item:hover {
+  background-color: #004884;
+  color: white;
+}
+
+.nav-item > .nav-link:hover {
+  color: white;
+}
+
 .title-box-visor-indicador {
   margin-bottom: 4rem;
 }
