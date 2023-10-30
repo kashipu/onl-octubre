@@ -21,28 +21,30 @@
       <div class="container logos-flex py-3 py-sm-4"><img class="logo-gobierno" src="./img/logo-gobierno.svg" alt="Logo, Colombia potencia mundial de la vida"><img class="logo-onl" src="img/onllogo1.svg" alt="Logo, ONL Observatorio nacional de logística"></div>
     </section>
     <header></header>
-    <div class="container">
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <div class="navbar-kitgov">
-            <div class="header-box">
-              <ul class="navbar-nav">
-                <li class="nav-item active"><a class="nav-link" href="#">Logística<span class="sr-only">(current)</span></a></li>
-                <li class="nav-item"><a class="nav-link" href="#">Infraestructura Intermodal</a></li>
-                <li class="nav-item"><a class="nav-link" href="#">Movilidad Regional</a></li>
-                <li class="nav-item"><a class="nav-link" href=""> Transición Energética</a></li>
-              </ul>
-            </div>
-            <div class="header-box-right">
-              <ul class="navbar-nav">
-                <li class="nav-item"><a class="nav-link" href="#">Estudios</a></li>
-                <li class="nav-item"><a class="nav-link" href=""> Acerca de</a></li>
-              </ul>
+    <div class="header-box">
+      <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <div class="navbar-kitgov">
+              <div class="header-box">
+                <ul class="navbar-nav">
+                  <li class="nav-item active"><a class="nav-link" href="#">Logística<span class="sr-only">(current)</span></a></li>
+                  <li class="nav-item"><a class="nav-link" href="#">Infraestructura Intermodal</a></li>
+                  <li class="nav-item"><a class="nav-link" href="#">Movilidad Regional</a></li>
+                  <li class="nav-item"><a class="nav-link" href=""> Transición Energética</a></li>
+                </ul>
+              </div>
+              <div class="header-box-right">
+                <ul class="navbar-nav">
+                  <li class="nav-item"><a class="nav-link" href="#">Estudios</a></li>
+                  <li class="nav-item"><a class="nav-link" href=""> Acerca de</a></li>
+                </ul>
+              </div>
             </div>
           </div>
-        </div>
-      </nav>
+        </nav>
+      </div>
     </div>
     <!-- include ./header-govco.pug-->
     <!-- include ./header-logos.pug-->
@@ -55,11 +57,6 @@
       </div>
       <div class="header-video-overlay bg-header-blue"></div>
       <div class="header-info-container">
-        <div class="header-info-link container">
-          <div class="row">
-            <div class="col-md-12 text-center text-sm-right"><a class="header-link" href="#">Acerca del observatorio</a></div>
-          </div>
-        </div>
         <div class="header-info-title container">
           <div class="row mt-5">
             <div class="col-md-12 text-center mt-5">
@@ -72,6 +69,12 @@
     </header>
     <!-- Main content-->
     <main>
+      <div class="container">
+        <div class="title-main-section">
+          <h2 class="title-main">Logística</h2>
+          <hr>
+        </div>
+      </div>
       <!-- card-indicador(img, alt, title, text, link, buttonText)-->
       <div class="container">
         <section class="card-deck">
@@ -82,7 +85,7 @@
               <hr/>
               <p class="card-text">Indicador de cobertura de empresas logísticas por actividad económica que utiliza información del directorio del 2022 creado por el DANE.</p>
             </div>
-            <div class="card-footer d-flex justify-content-end"><a class="btn btn-outline-card" href="#">Ir al visor de datos</a></div>
+            <div class="card-footer d-flex justify-content-end"><a class="btn btn-button-ui-blue" href="#">Ir al visor de datos</a></div>
           </div>
           <div class="card">
             <video class="card-img-top" src="video/fondocard.mp4" poster="img/img1.png" loop="loop" muted="muted"></video>
@@ -91,7 +94,7 @@
               <hr/>
               <p class="card-text">Relación de áreas urbanas para la movilidad, en el total nacional del área urbana el 11% esta destinado a los peatones y 4% a vehículos</p>
             </div>
-            <div class="card-footer d-flex justify-content-end"><a class="btn btn-outline-card" href="#">Ir al mapa</a></div>
+            <div class="card-footer d-flex justify-content-end"><a class="btn btn-button-ui-blue" href="#">Ir al mapa</a></div>
           </div>
         </section>
       </div>
@@ -119,7 +122,7 @@
               <hr/>
               <p class="card-text">En el rango de 0 a 1, el promedio nacional del Gini movilidad es de 0.47. Menos de la mitad del país tienen una movilidad aceptable.</p>
             </div>
-            <div class="card-footer d-flex justify-content-end"><a class="btn btn-outline-card" href="#">Ir al visor de datos</a></div>
+            <div class="card-footer d-flex justify-content-end"><a class="btn btn-button-ui-blue" href="#">Ir al visor de datos</a></div>
           </div>
           <div class="card">
             <video class="card-img-top" src="video/fondocard.mp4" poster="img/img1.png" loop="loop" muted="muted"></video>
@@ -128,7 +131,7 @@
               <hr/>
               <p class="card-text">De 17 mil km de vías primarias se encuentran en riesgo muy alto y alta 6.513 km, siendo un 38% del total.</p>
             </div>
-            <div class="card-footer d-flex justify-content-end"><a class="btn btn-outline-card" href="#">Ir al mapa</a></div>
+            <div class="card-footer d-flex justify-content-end"><a class="btn btn-button-ui-blue" href="#">Ir al mapa</a></div>
           </div>
         </section>
       </div>
@@ -155,7 +158,7 @@
               <hr/>
               <p class="card-text">Más de 1 millón de viviendas no tienen servicio de energía.</p>
             </div>
-            <div class="card-footer d-flex justify-content-end"><a class="btn btn-outline-card" href="#">Ir al visor de datos</a></div>
+            <div class="card-footer d-flex justify-content-end"><a class="btn btn-button-ui-blue" href="#">Ir al visor de datos</a></div>
           </div>
           <div class="card">
             <video class="card-img-top" src="video/fondocard.mp4" poster="img/img1.png" loop="loop" muted="muted"></video>
@@ -164,7 +167,7 @@
               <hr/>
               <p class="card-text">Cundinamarca tiene 900 metros de vías terciarias por kilómetro cuadrado de territorio, pero otros departamentos solo se tienen cerca de 100 metros.</p>
             </div>
-            <div class="card-footer d-flex justify-content-end"><a class="btn btn-outline-card" href="#">Ir al mapa</a></div>
+            <div class="card-footer d-flex justify-content-end"><a class="btn btn-button-ui-blue" href="#">Ir al mapa</a></div>
           </div>
         </section>
       </div>
@@ -231,8 +234,8 @@
               <div class="title-box-visor">
                 <h2>Geovisor</h2>
                 <hr>
-                <iframe class="visor22" src="https://dnpsig.dnp.gov.co/onlmaps/" scrolling="no" allowfullscreen frameborder="0" style="overflow:hidden; z-index:0; height:80vh; width:100%; border: none;"></iframe>
               </div>
+              <iframe class="visor22" src="https://dnpsig.dnp.gov.co/onlmaps/" scrolling="no" allowfullscreen frameborder="0" style="overflow:hidden; z-index:0; height:80vh; width:100%; border: none;"></iframe>
             </div>
           </div>
         </div>

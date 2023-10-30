@@ -10,12 +10,22 @@ html(lang="es")
         title ONL | Observatorio nacional de logística
     body
         // Header
-        include ../components/header-intern.pug
+        include ../components/header-kitgov.pug
         // Main content
-        main
+        div(class="main-border")
+        main.intern
+            .container
+                .row.mb-4
+                    .col-md-12.px-4
+                        nav(aria-label='breadcrumb')
+                        ol.breadcrumb
+                            li.breadcrumb-item
+                                a(href='#') Inicio
+                            li.breadcrumb-item
+                                a(href='#') Documentos técnicos
+                            li.breadcrumb-item.active(aria-current='page') Vías terciarias
             .container
                 include ../components/visor-indicador-title.pug
-                include ../components/banner-dnp.pug
         // Scripts
         include ../components/scripts.pug
         include ../components/footer.pug

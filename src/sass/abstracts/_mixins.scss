@@ -89,3 +89,40 @@
       }
 }
 
+@mixin button-ui-kit($colorText, $colorBg, $colorActive, $colorHover, $textHover, $borderColor) {
+        color: $colorText;
+        background-color: $colorBg;
+        border-color: $borderColor;
+
+      &:hover {
+        color: $textHover;
+        background-color: $colorHover;
+        border-color: $borderColor;
+      }
+
+      &:focus, &.focus {
+        color: $colorText;
+        background-color: $colorBg;
+        border-color: $borderColor;
+        box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 0.5);
+      }
+
+      &.disabled, &:disabled {
+        color: $colorText;
+        background-color: $colorBg;
+        border-color: $borderColor;
+      }
+
+      &:not(:disabled):not(.disabled):active, &:not(:disabled):not(.disabled).active,
+      .show > &.dropdown-toggle {
+        color: $colorText;
+        background-color: $colorBg;
+        border-color: $borderColor;
+      }
+
+      &:not(:disabled):not(.disabled):active:focus, &:not(:disabled):not(.disabled).active:focus,
+      .show > &.dropdown-toggle:focus {
+        box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 0.5);
+      }
+}
+

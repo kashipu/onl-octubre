@@ -1,3 +1,8 @@
+.header-box, .header-box-right {
+    background-color: #F2F2F2;
+    padding: 0rem;
+}
+
 .navbar-expand-lg .navbar-nav {
     width: 100%;
 }
@@ -28,8 +33,23 @@
         color: white;
     }
 }
-.nav-item > .nav-link {
-    &:hover {
-        color: white;
+.nav-item:hover .nav-link:hover {
+    color: white;
+}
+
+
+// @mixin button-ui-kit($colorText, $colorBg, $colorActive, $colorHover, $textHover, $borderColor)
+.btn-button-ui-blue {
+    @include button-ui-kit(#FFFFFF, #3366CC, #004884, #e6effd, #004884,#004884)
+}
+
+@media (max-width:1000px) {
+    .header-box, .header-box-right {
+        background-color: #F2F2F2;
+        padding: .5rem 0rem;
+    }
+
+    .navbar-kitgov {
+        flex-direction: column;
     }
 }

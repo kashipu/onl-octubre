@@ -54,6 +54,8 @@
     text-transform: uppercase;
     color: white;
     font-size: 3rem;
+    font-family: $montserrat;
+    font-weight: 300;
 }
 .header-title-intern {
     text-transform: uppercase;
@@ -101,16 +103,9 @@ $onl-border-intern: red;
     z-index: 10;
 }
 
-
-.collapse.show{
-    background-color: rgba(34, 54, 103);
-}
-.collapse.collapse-intern.show {
-    background-color: white;
-}
-
 .breadcrumb {
     background-color: transparent;
+    padding: 0;
 }
 .breadcrumb-item a {
     color: $blue-titles;

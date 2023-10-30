@@ -1,26 +1,27 @@
 include ./header-govco.pug
 include ./header-logos.pug
 header
-.container
-    nav.navbar.navbar-expand-lg.navbar-light.bg-light
-        button.navbar-toggler(type='button' data-toggle='collapse' data-target='#navbarNav' aria-controls='navbarNav' aria-expanded='false' aria-label='Toggle navigation')
-            span.navbar-toggler-icon
-        .collapse.navbar-collapse#navbarNav
-            .navbar-kitgov
-                .header-box
-                    ul.navbar-nav
-                        li.nav-item.active
-                            a.nav-link(href='#') Logística
-                                span.sr-only (current)
-                        li.nav-item
-                            a.nav-link(href='#') Infraestructura Intermodal
-                        li.nav-item
-                            a.nav-link(href='#') Movilidad Regional
-                        li.nav-item
-                            a.nav-link(href="")  Transición Energética
-                .header-box-right
-                    ul.navbar-nav
-                        li.nav-item
-                            a.nav-link(href='#') Estudios
-                        li.nav-item
-                            a.nav-link(href="")  Acerca de
+.header-box
+    .container
+        nav.navbar.navbar-expand-lg.navbar-light
+            button.navbar-toggler(type='button' data-toggle='collapse' data-target='#navbarNav' aria-controls='navbarNav' aria-expanded='false' aria-label='Toggle navigation')
+                span.navbar-toggler-icon
+            .collapse.navbar-collapse#navbarNav
+                .navbar-kitgov
+                    .header-box
+                        ul.navbar-nav
+                            li.nav-item.active
+                                a.nav-link(href='#') Logística
+                                    span.sr-only (current)
+                            li.nav-item
+                                a.nav-link(href='#') Infraestructura Intermodal
+                            li.nav-item
+                                a.nav-link(href='#') Movilidad Regional
+                            li.nav-item
+                                a.nav-link(href="")  Transición Energética
+                    .header-box-right
+                        ul.navbar-nav
+                            li.nav-item
+                                a.nav-link(href='#') Estudios
+                            li.nav-item
+                                a.nav-link(href="")  Acerca de

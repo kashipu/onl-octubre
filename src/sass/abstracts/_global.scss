@@ -7,17 +7,16 @@ body {
 
 main {
     position: relative;
-    margin-top: -80px;
+    margin-top: -150px;
 }
 main.intern {
-    margin-top: 2rem;
+    margin-top: 1.5rem;
 }
 
 .btn {
     border-radius: 1.25rem;
     padding: .5rem 2rem;
-    text-transform: uppercase;
-    font-weight: 600;
+    font-weight: 400;
 }
 
 // btn-outline($text-color, $border-color, $background-color, $hover-color)
@@ -46,3 +45,33 @@ main.intern {
 .bg-gray-onl {
     background-color: $gray-background !important;
   }
+
+
+.slick-prev:before {
+    content: url(../img/arrow-left.svg);
+
+}
+
+.slick-next:before {
+    content: url(../img/arrow-right.svg);
+    font-size: 2rem;
+    opacity: 1;
+}
+.title-main-section {
+    display: inline-block;
+    margin-bottom: 2rem;
+    hr {
+        border: 1px solid white;
+        margin-top: .5rem;
+        margin-bottom: .5rem;
+        margin-left: 0;
+    }
+}
+.title-main {
+    color: white;
+    font-family: $montserrat;
+    font-weight: 400;
+}
+.bg-card-capsula {
+    background-color: #EDF2F9;
+}

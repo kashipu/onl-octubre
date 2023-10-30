@@ -16,18 +16,17 @@ body {
 
 main {
   position: relative;
-  margin-top: -80px;
+  margin-top: -150px;
 }
 
 main.intern {
-  margin-top: 2rem;
+  margin-top: 1.5rem;
 }
 
 .btn {
   border-radius: 1.25rem;
   padding: 0.5rem 2rem;
-  text-transform: uppercase;
-  font-weight: 600;
+  font-weight: 400;
 }
 
 .btn-outline-card {
@@ -78,6 +77,37 @@ main.intern {
 
 .bg-gray-onl {
   background-color: #F9F9F9 !important;
+}
+
+.slick-prev:before {
+  content: url(../img/arrow-left.svg);
+}
+
+.slick-next:before {
+  content: url(../img/arrow-right.svg);
+  font-size: 2rem;
+  opacity: 1;
+}
+
+.title-main-section {
+  display: inline-block;
+  margin-bottom: 2rem;
+}
+.title-main-section hr {
+  border: 1px solid white;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  margin-left: 0;
+}
+
+.title-main {
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+}
+
+.bg-card-capsula {
+  background-color: #EDF2F9;
 }
 
 /* Components */
@@ -175,6 +205,8 @@ main.intern {
   text-transform: uppercase;
   color: white;
   font-size: 3rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 300;
 }
 
 .header-title-intern {
@@ -295,16 +327,9 @@ main.intern {
   z-index: 10;
 }
 
-.collapse.show {
-  background-color: rgb(34, 54, 103);
-}
-
-.collapse.collapse-intern.show {
-  background-color: white;
-}
-
 .breadcrumb {
   background-color: transparent;
+  padding: 0;
 }
 
 .breadcrumb-item a {
@@ -324,6 +349,11 @@ main.intern {
     margin-top: 0px;
   }
 }
+.header-box, .header-box-right {
+  background-color: #F2F2F2;
+  padding: 0rem;
+}
+
 .navbar-expand-lg .navbar-nav {
   width: 100%;
 }
@@ -359,10 +389,49 @@ main.intern {
   color: white;
 }
 
-.nav-item > .nav-link:hover {
+.nav-item:hover .nav-link:hover {
   color: white;
 }
 
+.btn-button-ui-blue {
+  color: #FFFFFF;
+  background-color: #3366CC;
+  border-color: #004884;
+}
+.btn-button-ui-blue:hover {
+  color: #004884;
+  background-color: #e6effd;
+  border-color: #004884;
+}
+.btn-button-ui-blue:focus, .btn-button-ui-blue.focus {
+  color: #FFFFFF;
+  background-color: #3366CC;
+  border-color: #004884;
+  box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 0.5);
+}
+.btn-button-ui-blue.disabled, .btn-button-ui-blue:disabled {
+  color: #FFFFFF;
+  background-color: #3366CC;
+  border-color: #004884;
+}
+.btn-button-ui-blue:not(:disabled):not(.disabled):active, .btn-button-ui-blue:not(:disabled):not(.disabled).active, .show > .btn-button-ui-blue.dropdown-toggle {
+  color: #FFFFFF;
+  background-color: #3366CC;
+  border-color: #004884;
+}
+.btn-button-ui-blue:not(:disabled):not(.disabled):active:focus, .btn-button-ui-blue:not(:disabled):not(.disabled).active:focus, .show > .btn-button-ui-blue.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.2rem rgba(38, 143, 255, 0.5);
+}
+
+@media (max-width: 1000px) {
+  .header-box, .header-box-right {
+    background-color: #F2F2F2;
+    padding: 0.5rem 0rem;
+  }
+  .navbar-kitgov {
+    flex-direction: column;
+  }
+}
 .title-box-visor-indicador {
   margin-bottom: 4rem;
 }
@@ -370,6 +439,7 @@ main.intern {
   font-size: 1.5rem;
   font-weight: 400;
   margin-bottom: 2rem;
+  color: #2D3546;
 }
 
 .title-encuesta {
@@ -394,7 +464,19 @@ main.intern {
   flex-direction: column;
 }
 .annio-encuesta select {
-  width: 30%;
+  min-width: 260px;
+  width: 20%;
+}
+.annio-encuesta label {
+  font-size: 2rem;
+  font-weight: 300;
+  color: #4E555F;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.select-encuesta {
+  background-color: #F9F9F9;
 }
 
 .card-deck .card {
@@ -408,7 +490,7 @@ main.intern {
 }
 
 .card-body hr {
-  border: 1.5px solid #727B36;
+  border: 1.5px solid #004884;
   width: 60%;
   margin-left: 0;
 }
@@ -430,6 +512,10 @@ main.intern {
      object-fit: cover;
 }
 
+.main-border {
+  border: 1px solid #004884;
+}
+
 .capsulas-title h1 {
   font-size: 1.8rem;
   margin-bottom: 1rem;
@@ -448,6 +534,7 @@ main.intern {
 }
 
 .title-box-visor {
+  display: inline-block;
   text-transform: uppercase;
   color: #475372;
 }
@@ -455,15 +542,14 @@ main.intern {
   font-size: 1.5rem;
 }
 .title-box-visor hr {
-  border: 1.5px solid #727B36;
-  width: 20%;
+  border: 1.5px solid #004884;
   margin-left: 0;
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
 }
 
 .slider-capsulas-box {
   background-color: #5A708C;
-  padding: 2rem;
+  padding: 2.5rem;
   margin-bottom: 3rem;
 }
 
@@ -509,10 +595,11 @@ main.intern {
 }
 
 .encuesta-header h2 {
-  font-size: 2.5rem;
+  color: #475372;
+  font-size: 1.8rem;
   margin-bottom: 1rem;
   text-transform: uppercase;
-  text-align: center;
+  font-weight: 400;
 }
 
 .dashboard-powerbi {

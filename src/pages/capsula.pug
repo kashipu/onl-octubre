@@ -11,19 +11,28 @@ html(lang="es")
     body
         // Header
         include ../components/header-kitgov.pug
-        include ../components/header-intern.pug
         // Main content
+        div(class="main-border")
         main.intern
             .container
+                .row.mb-4
+                    .col-md-12
+                        nav(aria-label='breadcrumb')
+                        ol.breadcrumb
+                            li.breadcrumb-item
+                                a(href='#') Inicio
+                            li.breadcrumb-item
+                                a(href='#') Documentos técnicos
+                            li.breadcrumb-item.active(aria-current='page') Vías terciarias
                 .row
                     .col-md-12
                         .capsulas-title
                             h1 SETP Sistemas Estratégicos de Transporte Público
                             h2 Estrategia de operación organizada y moderna de los Sistemas de Transporte Público
                         .capsulas-image
-                            img(class="img-fluid" src="https://placehold.co/1062x500/000000/FFF", alt="")
+                            img(class="img-fluid" src="https://placehold.co/1162x500/000000/FFF", alt="")
                 .row.my-5
-                    .col-lg-12
+                    .col-lg-8
                         .capsulas-body
                             h3 Sistemas Estratégicos de Transporte Público, competitivo, eficiente y equitativo
 
@@ -32,7 +41,11 @@ html(lang="es")
                             p Los SETP se basan en la operación organizada y moderna de transporte público, con elementos como: sistema de recaudo centralizado, sistema de gestión y control de flota, sistema de información al usuario, Terminales y paraderos, patio talleres, mantenimiento vial, actuación en centros históricos entre otras intervenciones.
 
                             p Las Ciudades que están implementando los SETP son Popayán, Pasto, Santa Marta, Armenia, Valledupar, Sincelejo, Neiva e Ibagué. El primer SETP que opera en Colombia corresponde a la ciudad de Valledupar.
+                    .col-lg-4
+                        include ../components/card-capsula-side.pug
 
+        .py-5
+        include ../components/slider-capsulas.pug
         // Scripts
         include ../components/banner-dnp.pug
         include ../components/scripts.pug

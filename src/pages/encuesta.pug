@@ -6,28 +6,29 @@ html(lang="es")
         include ../components/head.pug
         title Encuesta Nacional Logistica
     body
-        include ../components/header-intern.pug
+        include ../components/header-kitgov.pug
+        include ../components/header-main.pug
         main.intern-page
             .container
                 .row.bg-white.rounded
                     .col-md-12.text-center.p-3
                         .dashboard-powerbi.mb-5
-                .row
+                .row.pb-5
                     .col-md-6.text-center.d-flex.align-items-center.justify-content-center
                         img(class="img-fluid" src="img/logo-encuesta.png", alt="Imagen, encuesta nacional logistica")
                     .col-md-6.encuesta-text
                         p La ENL es un instrumento de captura y generación de información a través del cual se mide el desempeño logístico del país, sirviendo como insumo para la toma de decisiones, tanto en política pública como del sector privado, enfocadas en mejorar la infraestructura y los servicios de transporte, almacenamiento, comercio exterior y demás operaciones del sector logístico.
-                .row
-                    .col-md-12
-                        .annio-encuesta
-                            label(for="year") Elija el año a consultar
-                            select(name="year")
-                                option(value="") Seleccione
-                                option(value="") Seleccione
-                                option(value="") Seleccione
-                                option(value="") Seleccione
-                .container
-                    include inserto-encuesta.pug
+            .row.select-encuesta.p-4
+                .col-md-12
+                    .annio-encuesta
+                        label(for="year") Elija el año a consultar
+                        select(name="year")
+                            option(value="") Seleccione
+                            option(value="") Seleccione
+                            option(value="") Seleccione
+                            option(value="") Seleccione
+            .container
+                include inserto-encuesta.pug
         include ../components/banner-dnp.pug
         include ../components/scripts.pug
         include ../components/footer.pug
