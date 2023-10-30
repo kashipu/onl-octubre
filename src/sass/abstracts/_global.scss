@@ -21,7 +21,7 @@ main.intern {
 
 // btn-outline($text-color, $border-color, $background-color, $hover-color)
 .btn-outline-card {
-    @include btn-outline($green-lines, $green-lines, #fff,$green-lines);
+    @include btn-outline(#3366CC, #3366CC, #fff, #004884);
 }
 
 .banner-dnp {

@@ -40,7 +40,7 @@
 
 // @mixin button-ui-kit($colorText, $colorBg, $colorActive, $colorHover, $textHover, $borderColor)
 .btn-button-ui-blue {
-    @include button-ui-kit(#FFFFFF, #3366CC, #004884, #e6effd, #004884,#004884)
+    @include button-ui-kit(#FFFFFF, #3366CC, #004884, #004884, #ffffff ,#004884)
 }
 
 @media (max-width:1000px) {
