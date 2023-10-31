@@ -1,6 +1,7 @@
 include ../components/card-desk.pug
 include ../components/card-indicador.pug
 include ../components/banner-inserto.pug
+include ../components/breadcrumb.pug
 doctype html
 html(lang="es")
     head
@@ -12,6 +13,7 @@ html(lang="es")
     body
         // Header
         include ../components/header-kitgov.pug
+        +breadcrumb
         include ../components/header-main.pug
         // Main content
         main

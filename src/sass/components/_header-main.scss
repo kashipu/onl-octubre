@@ -103,17 +103,11 @@ $onl-border-intern: red;
     z-index: 10;
 }
 
-.breadcrumb {
-    background-color: transparent;
-    padding: 0;
-}
-.breadcrumb-item a {
-    color: $blue-titles;
-}
+
 
 @media (max-width: 450px) {
     .header-title, .header-title-intern {
-        font-size: 2.5rem;
+        font-size: 2.2rem;
     }
     .intern-page {
         margin-top: 0px;

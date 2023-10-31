@@ -20,11 +20,14 @@
 }
 
 .navbar-light .navbar-nav .nav-link {
-    color: #306db8;
+    color: #2A66B0;
+    font-weight: 700;
 }
 
 .navbar-light .navbar-nav .active>.nav-link {
-    color: #004884;
+    color: #2A66B0;
+    font-weight: 700;
+    text-decoration: underline;
 }
 
 .navbar-expand-lg {
