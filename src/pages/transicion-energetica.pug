@@ -1,0 +1,42 @@
+include ../components/card-desk.pug
+include ../components/card-indicador.pug
+include ../components/banner-inserto.pug
+include ../components/breadcrumb.pug
+doctype html
+html(lang="es")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        // Links y hojas de estilo
+        include ../components/head.pug
+        title ONL | Transición energetica  |  Observatorio nacional de logística
+    body
+        // Header
+        include ../components/header-kitgov.pug
+        .bg-header-gray.py-3
+        include ../components/header-main.pug
+        // Main content
+        main
+            .container
+                .title-main-section
+                    h2.title-main Logística
+                    hr
+            // card-indicador(img, alt, title, text, link, buttonText)
+            +card-desk
+                +card-indicador("video/cobertura-empresa-logistica-min.mp4", "img/card-img-empresas.png", "Cobertura de empresas", "Indicador de cobertura de empresas logísticas por actividad económica que utiliza información del directorio del 2022 creado por el DANE.", "#", "Ir al visor de datos")
+                +card-indicador("video/relacion-areas-urbanas-min.mp4", "img/img1.png", "Relación espacio urbano", "Relación de áreas urbanas para la movilidad, en el total nacional del área urbana el 11% esta destinado a los peatones y 4% a vehículos", "#", "Ir al mapa")
+            // banner-inserto(desktop, mobile, link, textoBoton)
+            +banner-inserto("img/banner1.png", "img/banner1-mb.png", "#", "Ver encuesta")
+            +card-desk
+                +card-indicador("video/gini-movilidad-mini.mp4", "img/card-img-gini.png", "Gini movilidad", "En el rango de 0 a 1, el promedio nacional del Gini movilidad es de 0.47. Menos de la mitad del país tienen una movilidad aceptable.", "#", "Ir al visor de datos")
+                +card-indicador("video/amenaza-movimento-masa-min.mp4", "img/card-img-mov-masa.png", "Amenaza movimiento en masa", "De 17 mil km de vías primarias se encuentran en riesgo muy alto y alta 6.513 km, siendo un 38% del total.", "#", "Ir al mapa")
+            +banner-inserto("img/banner2.png", "img/banner2-mb.png", "#", "Conectar")
+            +card-desk
+                +card-indicador("video/cobertura-energia-min.mp4", "img/card-img-cobertura-energia.png", "Cobertura de energía", "Más de 1 millón de viviendas no tienen servicio de energía.", "#", "Ir al visor de datos")
+                +card-indicador("video/densidad-red-vial-terciaria-mini.mp4", "img/card-img-densidad-red-vial.png", "Densidad red vial", "Cundinamarca tiene 900 metros de vías terciarias por kilómetro cuadrado de territorio, pero otros departamentos solo se tienen cerca de 100 metros.", "#", "Ir al mapa")
+            .p-5
+            include ../components/slider-capsulas.pug
+            include ../components/visor-box.pug
+            include ../components/banner-dnp.pug
+        include ../components/scripts.pug
+        include ../components/footer.pug

@@ -1,10 +1,10 @@
+include ../components/card-slider.pug
 .container
     .slider-capsulas-box
         section.slider-capsulas
-            include ../components/card-slider.pug
-            include ../components/card-slider.pug
-            include ../components/card-slider.pug
-            include ../components/card-slider.pug
-            include ../components/card-slider.pug
-            include ../components/card-slider.pug
-            include ../components/card-slider.pug
+            // card-slider(img, buttonText, linkButton)
+            +card-slider('img/cap-card-mapa.png', 'SEPT Transporte', 'capsula.html')
+            +card-slider('img/cap-card-politica-portuaria.png', 'Política Portuaria', '#')
+            +card-slider('https://via.placeholder.com/483x271', 'SEPT Transporte', '#')
+            +card-slider('https://via.placeholder.com/483x271', 'SEPT Transporte', '#')
+            +card-slider('https://via.placeholder.com/483x271', 'SEPT Transporte', '#')

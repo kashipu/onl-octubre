@@ -1,8 +1,8 @@
-article.card-capsula
-    .card-capsula-box
-        .card-capsula-image
-            img(src="https://placehold.co/300x200")
-        .card-capsula-content
-            a(href="#")
-                h3.card-capsula-title
-                | SEPT Transporte
+mixin card-slider(img, buttonText, linkButton)
+    article.card-capsula
+        .card-capsula-box
+            .card-capsula-image
+                img(src=img)
+            .card-capsula-content
+                a(href=linkButton)
+                    h3.card-capsula-title=buttonText

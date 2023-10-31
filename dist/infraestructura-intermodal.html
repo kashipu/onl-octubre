@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Links y hojas de estilo-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <title>ONL | Infraestructura Intermodal  |  Observatorio nacional de logística</title>
+  </head>
+  <body>
+    <!-- Header-->
+    <section class="header-govco">
+      <div class="content-box container"><img src="./img/logo_govco.svg" alt="Logo, Tramites y del gobierno colombiano"></div>
+    </section>
+    <section class="header-logos">
+      <div class="container logos-flex py-3 py-sm-4"><img class="logo-gobierno" src="./img/logo-gobierno.svg" alt="Logo, Colombia potencia mundial de la vida"><img class="logo-onl" src="img/onllogo1.svg" alt="Logo, ONL Observatorio nacional de logística"></div>
+    </section>
+    <header></header>
+    <div class="header-box">
+      <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light">
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <div class="navbar-kitgov">
+              <div class="header-box">
+                <ul class="navbar-nav">
+                  <li class="nav-item active"><a class="nav-link" href="index.html">Logística<span class="sr-only">(current)</span></a></li>
+                  <li class="nav-item"><a class="nav-link" href="infraestructura-intermodal.html">Infraestructura Intermodal</a></li>
+                  <li class="nav-item"><a class="nav-link" href="movilidad-regional.html">Movilidad Regional</a></li>
+                  <li class="nav-item"><a class="nav-link" href="transicion-energetica.html"> Transición Energética</a></li>
+                </ul>
+              </div>
+              <div class="header-box-right">
+                <ul class="navbar-nav">
+                  <li class="nav-item"><a class="nav-link" href="#">Estudios</a></li>
+                  <li class="nav-item"><a class="nav-link" href=""> Acerca de</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </div>
+    <div class="bg-header-gray py-3"></div>
+    <!-- include ./header-govco.pug-->
+    <!-- include ./header-logos.pug-->
+    <header class="header-main">
+      <div class="header-video-wrapper">
+        <video class="header-video" playsinline autoplay muted loop poster="video/cargo-ship-poster.jpg">
+          <source src="video/cargo-ship.mp4" type="video/mp4">
+          <source src="video/cargo-ship.webm" type="video/webm"> Your browser does not support the video tag.
+        </video>
+      </div>
+      <div class="header-video-overlay bg-header-blue"></div>
+      <div class="header-info-container">
+        <div class="header-info-title container">
+          <div class="row mt-5">
+            <div class="col-md-12 text-center mt-5">
+              <h1 class="header-title">Observatorio nacional de logística</h1>
+            </div>
+          </div>
+        </div>
+        <div class="header-info-nav container mb-5"></div>
+      </div>
+    </header>
+    <!-- Main content-->
+    <main>
+      <div class="container">
+        <div class="title-main-section">
+          <h2 class="title-main">Logística</h2>
+          <hr>
+        </div>
+      </div>
+      <!-- card-indicador(img, alt, title, text, link, buttonText)-->
+      <div class="container">
+        <section class="card-deck">
+          <div class="card">
+            <video class="card-img-top" src="video/cobertura-empresa-logistica-min.mp4" poster="img/card-img-empresas.png" loop="loop" muted="muted"></video>
+            <div class="card-body">
+              <h2 class="card-title">Cobertura de empresas</h2>
+              <hr/>
+              <p class="card-text">Indicador de cobertura de empresas logísticas por actividad económica que utiliza información del directorio del 2022 creado por el DANE.</p>
+            </div>
+            <div class="card-footer d-flex justify-content-end"><a class="btn btn-button-ui-blue" href="#">Ir al visor de datos</a></div>
+          </div>
+          <div class="card">
+            <video class="card-img-top" src="video/relacion-areas-urbanas-min.mp4" poster="img/img1.png" loop="loop" muted="muted"></video>
+            <div class="card-body">
+              <h2 class="card-title">Relación espacio urbano</h2>
+              <hr/>
+              <p class="card-text">Relación de áreas urbanas para la movilidad, en el total nacional del área urbana el 11% esta destinado a los peatones y 4% a vehículos</p>
+            </div>
+            <div class="card-footer d-flex justify-content-end"><a class="btn btn-button-ui-blue" href="#">Ir al mapa</a></div>
+          </div>
+        </section>
+      </div>
+      <!-- banner-inserto(desktop, mobile, link, textoBoton)-->
+      <section class="banner-inserto">
+        <div class="container">
+          <div class="row my-4 rounded">
+            <div class="col-lg-12 bg-gray-onl">
+              <picture>
+                <!-- Imagen responsive cuadrada-->
+                <source media="(max-width:991px)" srcset="img/banner1-mb.png"/>
+                <!-- Imagen rectangular para pantallas grandes--><img class="img-fluid" src="img/banner1.png" alt="Imagen,Banner"/>
+              </picture>
+            </div>
+            <div class="col-lg-12 p-3 d-flex align-items-center justify-content-end"><a class="btn btn-outline-card" href="#">Ver encuesta</a></div>
+          </div>
+        </div>
+      </section>
+      <div class="container">
+        <section class="card-deck">
+          <div class="card">
+            <video class="card-img-top" src="video/gini-movilidad-mini.mp4" poster="img/card-img-gini.png" loop="loop" muted="muted"></video>
+            <div class="card-body">
+              <h2 class="card-title">Gini movilidad</h2>
+              <hr/>
+              <p class="card-text">En el rango de 0 a 1, el promedio nacional del Gini movilidad es de 0.47. Menos de la mitad del país tienen una movilidad aceptable.</p>
+            </div>
+            <div class="card-footer d-flex justify-content-end"><a class="btn btn-button-ui-blue" href="#">Ir al visor de datos</a></div>
+          </div>
+          <div class="card">
+            <video class="card-img-top" src="video/amenaza-movimento-masa-min.mp4" poster="img/card-img-mov-masa.png" loop="loop" muted="muted"></video>
+            <div class="card-body">
+              <h2 class="card-title">Amenaza movimiento en masa</h2>
+              <hr/>
+              <p class="card-text">De 17 mil km de vías primarias se encuentran en riesgo muy alto y alta 6.513 km, siendo un 38% del total.</p>
+            </div>
+            <div class="card-footer d-flex justify-content-end"><a class="btn btn-button-ui-blue" href="#">Ir al mapa</a></div>
+          </div>
+        </section>
+      </div>
+      <section class="banner-inserto">
+        <div class="container">
+          <div class="row my-4 rounded">
+            <div class="col-lg-12 bg-gray-onl">
+              <picture>
+                <!-- Imagen responsive cuadrada-->
+                <source media="(max-width:991px)" srcset="img/banner2-mb.png"/>
+                <!-- Imagen rectangular para pantallas grandes--><img class="img-fluid" src="img/banner2.png" alt="Imagen,Banner"/>
+              </picture>
+            </div>
+            <div class="col-lg-12 p-3 d-flex align-items-center justify-content-end"><a class="btn btn-outline-card" href="#">Conectar</a></div>
+          </div>
+        </div>
+      </section>
+      <div class="container">
+        <section class="card-deck">
+          <div class="card">
+            <video class="card-img-top" src="video/cobertura-energia-min.mp4" poster="img/card-img-cobertura-energia.png" loop="loop" muted="muted"></video>
+            <div class="card-body">
+              <h2 class="card-title">Cobertura de energía</h2>
+              <hr/>
+              <p class="card-text">Más de 1 millón de viviendas no tienen servicio de energía.</p>
+            </div>
+            <div class="card-footer d-flex justify-content-end"><a class="btn btn-button-ui-blue" href="#">Ir al visor de datos</a></div>
+          </div>
+          <div class="card">
+            <video class="card-img-top" src="video/densidad-red-vial-terciaria-mini.mp4" poster="img/card-img-densidad-red-vial.png" loop="loop" muted="muted"></video>
+            <div class="card-body">
+              <h2 class="card-title">Densidad red vial</h2>
+              <hr/>
+              <p class="card-text">Cundinamarca tiene 900 metros de vías terciarias por kilómetro cuadrado de territorio, pero otros departamentos solo se tienen cerca de 100 metros.</p>
+            </div>
+            <div class="card-footer d-flex justify-content-end"><a class="btn btn-button-ui-blue" href="#">Ir al mapa</a></div>
+          </div>
+        </section>
+      </div>
+      <div class="p-5"></div>
+      <div class="container">
+        <div class="slider-capsulas-box">
+          <section class="slider-capsulas">
+            <!-- card-slider(img, buttonText, linkButton)-->
+                  <article class="card-capsula">
+                    <div class="card-capsula-box">
+                      <div class="card-capsula-image"><img src="img/cap-card-mapa.png"></div>
+                      <div class="card-capsula-content"><a href="capsula.html">
+                          <h3 class="card-capsula-title">SEPT Transporte</h3></a></div>
+                    </div>
+                  </article>
+                  <article class="card-capsula">
+                    <div class="card-capsula-box">
+                      <div class="card-capsula-image"><img src="img/cap-card-politica-portuaria.png"></div>
+                      <div class="card-capsula-content"><a href="#">
+                          <h3 class="card-capsula-title">Política Portuaria</h3></a></div>
+                    </div>
+                  </article>
+                  <article class="card-capsula">
+                    <div class="card-capsula-box">
+                      <div class="card-capsula-image"><img src="https://via.placeholder.com/483x271"></div>
+                      <div class="card-capsula-content"><a href="#">
+                          <h3 class="card-capsula-title">SEPT Transporte</h3></a></div>
+                    </div>
+                  </article>
+                  <article class="card-capsula">
+                    <div class="card-capsula-box">
+                      <div class="card-capsula-image"><img src="https://via.placeholder.com/483x271"></div>
+                      <div class="card-capsula-content"><a href="#">
+                          <h3 class="card-capsula-title">SEPT Transporte</h3></a></div>
+                    </div>
+                  </article>
+                  <article class="card-capsula">
+                    <div class="card-capsula-box">
+                      <div class="card-capsula-image"><img src="https://via.placeholder.com/483x271"></div>
+                      <div class="card-capsula-content"><a href="#">
+                          <h3 class="card-capsula-title">SEPT Transporte</h3></a></div>
+                    </div>
+                  </article>
+          </section>
+        </div>
+      </div>
+      <section class="visor-box">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <div class="title-box-visor">
+                <h2>Geovisor</h2>
+                <hr>
+              </div>
+              <iframe class="visor22" src="https://dnpsig.dnp.gov.co/onlmaps/" scrolling="no" allowfullscreen frameborder="0" style="overflow:hidden; z-index:0; height:80vh; width:100%; border: none;"></iframe>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="banner-dnp"><img class="img-fluid" src="img/logodnp.jpeg" alt="Logo, departamento nacional de planeación"></section>
+    </main>
+    <script src="js/jquery.slim.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script src="js/main.js"></script>
+    <footer class="footer"></footer>
+  </body>
+</html>
