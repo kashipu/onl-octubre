@@ -1,5 +1,5 @@
 .header-box, .header-box-right {
-    background-color: #F2F2F2;
+    background-color: #FFFFFF;
     padding: 0rem;
 }
 
@@ -19,6 +19,14 @@
     padding-left: 0;
 }
 
+.navbar-light .navbar-nav .nav-link {
+    color: #306db8;
+}
+
+.navbar-light .navbar-nav .active>.nav-link {
+    color: #004884;
+}
+
 .navbar-expand-lg {
     padding: 0;
 }
@@ -29,7 +37,7 @@
 .nav-item {
     padding: .3rem;
     &:hover {
-        background-color: #004884;
+        background-color: #2A66B0;
         color: white;
     }
 }
@@ -45,7 +53,7 @@
 
 @media (max-width:1000px) {
     .header-box, .header-box-right {
-        background-color: #F2F2F2;
+        background-color: #FFFFFF;
         padding: .5rem 0rem;
     }
 
