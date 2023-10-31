@@ -1,5 +1,6 @@
 include ../components/card-desk.pug
 include ../components/card-indicador.pug
+include ../components/breadcrumb.pug
 doctype html
 html(lang="es")
     head
@@ -11,19 +12,8 @@ html(lang="es")
     body
         // Header
         include ../components/header-kitgov.pug
-        // Main content
-        div(class="main-border")
+        +breadcrumb
         main.intern
-            .container
-                .row.mb-4
-                    .col-md-12.px-4
-                        nav(aria-label='breadcrumb')
-                        ol.breadcrumb
-                            li.breadcrumb-item
-                                a(href='#') Inicio
-                            li.breadcrumb-item
-                                a(href='#') Documentos técnicos
-                            li.breadcrumb-item.active(aria-current='page') Vías terciarias
             .container
                 include ../components/visor-indicador-title.pug
         // Scripts

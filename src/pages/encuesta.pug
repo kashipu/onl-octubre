@@ -1,3 +1,4 @@
+include ../components/breadcrumb.pug
 doctype html
 html(lang="es")
     head
@@ -7,6 +8,7 @@ html(lang="es")
         title Encuesta Nacional Logistica
     body
         include ../components/header-kitgov.pug
+        +breadcrumb
         include ../components/header-main.pug
         main.intern-page
             .container

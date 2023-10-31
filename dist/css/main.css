@@ -142,9 +142,8 @@ main.intern {
   }
 }
 .breadcrumb-overflow {
-  display: flex;
   width: 100%;
-  height: 60px;
+  height: 50px;
   white-space: nowrap;
   overflow-x: auto;
   overflow-y: hidden;
@@ -156,13 +155,21 @@ main.intern {
   position: relative;
   flex-wrap: nowrap;
   width: 100%;
-  gap: 0.5rem;
   background-color: transparent;
   margin-bottom: 0;
 }
 
 .breadcrumb-item {
   white-space: nowrap;
+}
+.breadcrumb-item a {
+  color: #475372;
+  font-weight: 400;
+}
+
+.breadcrumb-item.active {
+  color: #213770;
+  text-decoration: underline;
 }
 
 /* $videoHeight: 500px; */
